@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Grohere Financial Services</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Top Navbar -->
+ <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo-text">
+            <img src="images/grohere logo.png" alt="Grohere Logo" class="nav-logo"/>
+            <span class="brand-name">GROHERE</span>
+        </div>
+<!-- Hamburger Icon -->
+   <div class="hamburger" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#services">Services</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <!-- Hero Section -->
+<!-- Hero Section -->
+<header class="hero-section">
+  <div class="hero-content">
+    <h1>TRUSTED AND SAFEST</h1>
+    <h1>INVESTMENT PLANNER</h1>
+    </div>
+  </div>
+</header>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Our Services Section -->
+<div class="services-section" id="services">
+  <h2>Our Services</h2>
+  <div class="divider"></div>
+
+  <div class="services-container">
+
+    <!-- Service Card 1 -->
+    <div class="service-card">
+      <h3>Multi-Exchange Access</h3>
+      <ul>
+        <li>Buy and sell across NSE, BSE</li>
+        <li>Real-time trading dashboard</li>
+        <li>Zero hidden fees</li>
+        <li>Cross-platform compatibility</li>
+        <li>Fast KYC processing</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Service Card 2 -->
+    <div class="service-card">
+      <h3>Low Brokerage Plans</h3>
+      <ul>
+        <li>Flat-fee or % based options</li>
+        <li>Flexible for every investor</li>
+        <li>Monthly & annual pricing</li>
+        <li>No inactivity charges</li>
+        <li>Automated cost tracking</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Service Card 3 -->
+    <div class="service-card">
+      <h3>Advanced Chart Tools</h3>
+      <ul>
+        <li>Live price charts</li>
+        <li>Technical indicators</li>
+        <li>Pattern recognition</li>
+        <li>Custom watchlists</li>
+        <li>Multi-timeframe view</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Service Card 4 -->
+    <div class="service-card">
+      <h3>Personalized Support</h3>
+      <ul>
+        <li>Dedicated relationship managers</li>
+        <li>Priority issue resolution</li>
+        <li>Local language assistance</li>
+        <li>Onboarding walkthroughs</li>
+        <li>WhatsApp helpdesk</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Service Card 5 -->
+    <div class="service-card">
+      <h3>Smart Alerts & Reports</h3>
+      <ul>
+        <li>Price change notifications</li>
+        <li>Portfolio performance tracking</li>
+        <li>Instant trade confirmations</li>
+        <li>Daily P&L reports</li>
+        <li>Tax-ready summaries</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Service Card 6 -->
+    <div class="service-card">
+      <h3>Secure Account Handling</h3>
+      <ul>
+        <li>Bank-grade encryption</li>
+        <li>2FA & biometric logins</li>
+        <li>Instant fund transfers</li>
+        <li>Regular security audits</li>
+        <li>Fraud monitoring systems</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+
+  </div>
+</div>
+
+<section class="about-section" id="about">
+  <div class="about-container">
+    <h2>ABOUT COMPANY</h2>
+    <div class="divider"></div>
+    <p>
+      At <strong>GroHere</strong>, we are committed to helping individuals and businesses navigate the complexities of personal finance.
+      Whether you need advice on investment strategies or retirement goals, our team of experts is here to guide you every step of the way.
+    </p>
+    <p>
+      Our mission is to empower our clients with the knowledge and tools they need to make informed financial decisions.
+      With over <strong>4 years</strong> of experience in the financial services industry, our team has helped hundreds of clients achieve their financial goals.
+    </p>
+    <p>
+      Ready to take control of your financial future? Contact us today to schedule a free consultation and start planning your path to financial security.
+    </p>
+  </div>
+</section>
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <h2>CONTACT US</h2>
+    <div class="divider"></div>
+    <p>
+      We'd love to hear from you. Whether it's a question about our services or you're ready to start your financial journey — reach out!
+    </p>
+
+    <form class="contact-form" id="whatsapp-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  document.getElementById("whatsapp-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form submission
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const fullMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    const phoneNumber = "918308019093"; // WhatsApp number with country code
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
+
+    window.open(whatsappURL, "_blank");
+  });
+</script>
+
+ <script src="script.js"></script>
+<footer class="footer-section">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>GroHere Financial Services</h3>
+      <p>Dharampeth, Nagpur, Maharashtra, India</p>
+      <p>📞 8308019093</p>
+      <p>✉️ grohereservices@gmail.com</p>
+    </div>
+    <div class="footer-right">
+      <h4>Working Hours</h4>
+      <ul>
+        <li>Mon – By Appointment</li>
+        <li>Tue – Fri: <strong>09:00 am – 05:00 pm</strong></li>
+        <li>Sat – Sun: <span class="closed">Closed</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 GroHere Financial Services. All rights reserved. <br>Designed & Developed with ❤️ by <strong>Nikhil</strong>.</p>
+  </div>
+</footer>
+</body>
+</html>
