@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Grohere Financial Services</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "groHere",
+  "url": "https://grohere.in",
+  "logo": "https://grohere.in/images/logo.png"
+}
+</script>
+
+
+<!-- Use only Swiper v11 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 </head>
 <body>
 
@@ -42,7 +61,7 @@
   </div>
 </header>
 
-    <script src="script.js"></script>
+
 </body>
 </html>
 <!-- Our Services Section -->
@@ -142,6 +161,97 @@
     </div>
   </div>
 </div>
+
+<!-- Analytics & Insights Section -->
+<section class="analytics-section">
+  <div class="analytics-container">
+
+    <div class="analytics-header" data-fade>
+      <h2><span class="highlight">Powerful</span> Analytics & Insights</h2>
+      <p>Make data-driven decisions with smart dashboards, customer insights, and performance tracking to grow your business.</p>
+    </div>
+
+    <div class="analytics-grid">
+
+      <!-- Left Info Cards -->
+      <div class="analytics-features">
+        <div class="feature-card" data-fade>
+          <div class="icon">📊</div>
+          <div>
+            <h3>Market Dashboards</h3>
+            <p>Real-time charts and graphs for stock trends, indices, and price movements.</p>
+            <a href="https://www.tradingview.com/chart/?symbol=NSE%3ANIFTY" target="_blank" class="tag orange">Real-time tracking</a>
+          </div>
+        </div>
+
+        <div class="feature-card" data-fade>
+          <div class="icon">📈</div>
+          <div>
+            <h3>Performance Insights</h3>
+            <p>Analyze stock performance, trading volumes, and sector-wise trends.</p>
+            <span class="tag gold">Growth +45%</span>
+          </div>
+        </div>
+
+        <div class="feature-card" data-fade>
+          <div class="icon">🕒</div>
+          <div>
+            <h3>Time-based Filters</h3>
+            <p>Monitor market activity over different intervals – daily, weekly, or yearly.</p>
+            <span class="tag grey">₹2.5L this month</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Stats Block -->
+      <div class="analytics-stats" data-fade>
+        <h3>Sales Snapshot</h3>
+        <div class="stats-boxes">
+          <div class="stat green">
+            <strong>25%</strong>
+            <span>Monthly Growth</span>
+          </div>
+          <div class="stat blue">
+            <strong>92%</strong>
+            <span>Customer Retention</span>
+          </div>
+          <div class="stat violet">
+            <strong>148%</strong>
+            <span>Annual ROI</span>
+          </div>
+        </div>
+       <div class="live-chart-section" data-fade>
+  <h3 class="chart-title">Live NIFTY Chart</h3>
+
+  <!-- TradingView Container -->
+  <div id="tv-container" class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+    {
+      "symbol": "NSE:NIFTY",
+      "width": "100%",
+      "colorTheme": "dark",
+      "isTransparent": false,
+      "locale": "en"
+    }
+    </script>
+  </div>
+
+  <!-- Fallback Chart -->
+  <div id="fallback-chart-container" style="display: none; margin-top: 20px;">
+    <canvas id="niftyChart"></canvas>
+    <p class="chart-note">
+      This is a simulated chart. <a href="https://www.tradingview.com/chart/?symbol=NSE%3ANIFTY" target="_blank">View real-time chart</a>.
+    </p>
+  </div>
+</div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- about -->
 <section class="about-section" id="about">
   <div class="about-container">
     <h2>ABOUT COMPANY</h2>
@@ -159,6 +269,59 @@
     </p>
   </div>
 </section>
+<!-- Testimonials Section -->
+<section class="testimonials-horizontal">
+  <h2>What Our Clients Say</h2>
+  <div class="horizontal-cards">
+    <div class="h-card">
+      <img src="images/testimonial 1.png" alt="Client 1">
+      <h3>Ramesh Patil</h3>
+      <p class="location">Pune, India</p>
+      <p class="feedback">“Using GroHere helped me diversify and plan better. The real-time market dashboard is brilliant!”</p>
+    </div>
+
+    <div class="h-card">
+      <img src="images/owner.jpg" alt="Client 2">
+      <h3>Priya Sharma</h3>
+      <p class="location">Mumbai, India</p>
+      <p class="feedback">“Their intuitive UI and market filters helped me analyze trends like a pro. Highly recommended!”</p>
+    </div>
+
+    <div class="h-card">
+      <img src="images/owner.jpg" alt="Client 3">
+      <h3>Aditya Jain</h3>
+      <p class="location">Delhi, India</p>
+      <p class="feedback">“As a beginner investor, GroHere made everything simple, visual, and trustworthy.”</p>
+    </div>
+  </div>
+</section>
+
+<!--photo gallery-->
+<section class="photo-gallery">
+  <h2>Event Highlights</h2>
+  <div class="gallery-grid">
+    <img src="images/image1.jpeg" alt="Event photo 1">
+    <img src="images/image2.jpeg" alt="Event photo 2">
+    <img src="images/image3.jpeg" alt="Event photo 3">
+    <img src="images/image4.jpeg" alt="Event photo 4">
+  </div>
+</section>
+
+<!-- Owner Section -->
+<section class="owner-section">
+  <div class="owner-container">
+    <div class="owner-image">
+      <img src="images/owner.jpg" alt="Sparsh Meshram - Founder & CEO GroHere" />
+    </div>
+    <div class="owner-details">
+      <h3>Mr. Sparsh Meshram</h3>
+      <p class="title">Founder & CEO – GroHere | IBCN</p>
+      <div class="owner-divider"></div>
+    </div>
+  </div>
+</section>
+
+
 <section class="contact-section" id="contact">
   <div class="contact-container">
     <h2>CONTACT US</h2>
@@ -201,7 +364,7 @@
       <p>Shop No. 1, Shiv Height, Beltarodi Road, Nagpur – 444001</p>
       <p>Maharashtra, India</p>
 
-      <p>📞 8308019093</p>
+      <p>📞 8530090935</p>
       <p>✉️ <a href="mailto:grohereservices@gmail.com">grohereservices@gmail.com</a></p>
     </div>
 
@@ -215,6 +378,7 @@
       </ul>
     </div>
   </div>
+
 
   <!-- Partners Section -->
   <div class="partners-section">
