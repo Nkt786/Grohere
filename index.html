@@ -26,33 +26,31 @@
 
 </head>
 <body>
-
-    <!-- Top Navbar -->
+<!-- Top Navbar -->
 <nav class="navbar">
-    <div class="nav-container">
-        <a href="https://grohere.in" class="logo-text">
-            <img src="images/grohere logo.png" alt="Grohere Logo" class="nav-logo"/>
-            <span class="brand-name">GROHERE</span>
-        </a>
+  <div class="nav-container">
+    <a href="https://grohere.in" class="logo-text">
+      <img src="images/grohere logo.png" alt="Grohere Logo" class="nav-logo"/>
+      <span class="brand-name">GROHERE</span>
+    </a>
+    <!-- GROUP both Hamburger and nav-links together -->
+    <div class="nav-right">
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
     </div>
-</nav>
-
-<!-- Hamburger Icon -->
-   <div class="hamburger" onclick="toggleMenu()">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#services">Services</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-    </ul>
   </div>
 </nav>
-
 
     <!-- Hero Section -->
 <!-- Hero Section -->
@@ -267,9 +265,6 @@
       Our mission is to empower our clients with the knowledge and tools they need to make informed financial decisions.
       With over <strong>6 years</strong> of experience in the financial services industry, our team has helped hundreds of clients achieve their financial goals.
     </p>
-    <p>
-      Ready to take control of your financial future? Contact us today to schedule a free consultation and start planning your path to financial security.
-    </p>
   </div>
 </section>
 <!-- Testimonials Section -->
@@ -284,9 +279,9 @@
     </div>
 
     <div class="h-card">
-      <img src="images/testimonial2.jpeg" alt="Client 2">
-      <h3>Priya Sharma</h3>
-      <p class="location">Mumbai, India</p>
+      <img src="images/testimonial2.JPG" alt="Client 2">
+      <h3>Rishabh Soni</h3>
+      <p class="location">Nagpur, India</p>
       <p class="feedback">“GroHere has given me the best intraday plans and long term returns.”</p>
     </div>
 
@@ -351,7 +346,7 @@
     const message = document.getElementById("message").value.trim();
 
     const fullMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-    const phoneNumber = "918308019093"; // WhatsApp number with country code
+    const phoneNumber = "918530090935"; // WhatsApp number with country code
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
 
@@ -402,6 +397,6 @@
 
   <!-- Footer Bottom Section -->
   <div class="footer-bottom">
-    <p>© 2025 GroHere Financial Services. All rights reserved. <br>Designed & Developed by <strong>Nikhil</strong>.</p>
+    <p>© 2025 GroHere Financial Services. All rights reserved.</p>
   </div>
 </footer>
